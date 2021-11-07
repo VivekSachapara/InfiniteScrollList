@@ -1,0 +1,76 @@
+.loginWrapper {
+    display: flex;
+    margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    min-width: 250px
+}
+.username {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.password {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.submit {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.loginerror {
+    color: red;
+    font-size: 14px;
+}
+.userDetail {
+    display: flex;
+    flex-wrap: wrap;
+}
+.user {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.picture {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.userName {
+    margin-bottom: 20px;
+}
+.logout {
+    padding: 5px;
+    border: 1px solid #68f27b;
+    outline: none;
+    cursor: pointer;
+}
+.logoutWrapper{ 
+    display: flex;
+    padding: 10px 50px 10px 10px;
+    background: #e3e3e3;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.loading {
+    font-size: 20px;
+    margin-left: 30px;
+}
+@media screen and (max-width: 600px) {
+    .logoutWrapper {
+        padding: 10px
+    }
+ }
