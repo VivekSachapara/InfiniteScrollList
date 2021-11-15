@@ -49,10 +49,7 @@ const Home = () => {
 
     useEffect(() => {
         const getAccessToken = localStorage.getItem("accessToken");
-        if (getAccessToken && getAccessToken.length > 0 ) {
-            setPagenumber(pagenumber+1);
-        }
-        else {
+        if (!(getAccessToken && getAccessToken.length > 0 )) {
             navigate("/login")
         }
     }, []);
